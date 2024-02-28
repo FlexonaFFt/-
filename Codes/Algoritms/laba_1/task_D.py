@@ -24,3 +24,12 @@ num2 = input()
 
 # Вызов функции для сложения и вывод результата
 print(binary_addition(num1, num2))
+
+
+# def bin_sum():
+#     number1 = int(input(), 2)
+#     number2 = int(input(), 2)
+#     sum = number1 + number2
+#     print(bin(sum)[2:])
+
+# bin_sum()
