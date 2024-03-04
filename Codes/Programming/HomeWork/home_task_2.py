@@ -8,6 +8,7 @@ if function == 1:
                 '192.192.4.5', '192.192.10.10', '192.119.1.5'}
 
     def blocked_ip(ip_adress):
+        ip_adress = ip_adress.replace(' ', '')  # Удаляем пробелы
         if ip_adress in blocked_ip_list:
             return True
         else:
@@ -18,6 +19,7 @@ if function == 1:
           + "\033[36mXXX.XXX.XX.X \033[0m" + '\n'
           + "\033[36mXXX.XXX.XXX.X \033[0m") 
     inputed_ip = input("Введте IP-адрес устройства: ")
+    inputed_ip = inputed_ip.replace(' ', '')
     
     if blocked_ip(inputed_ip):
         print("\033[31mДоступ с IP-адреса {} запрещён!\033[0m".format(inputed_ip))
