@@ -11,4 +11,4 @@ for _ in range(num_records):
         results[candidate] = votes
     
 for candidate in sorted(results.keys()):
-    print(f'{candidate}' + ' ' + f'{results[candidate]}')
+    print(candidate, results[candidate])
