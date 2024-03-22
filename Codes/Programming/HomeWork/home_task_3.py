@@ -36,9 +36,7 @@ if primer == 2:
     proverka_2(proverka_word_is_palindrome, input_string)'''
 
 def proverka_word_is_palindrome(word):
-    # Приводим слово к нижнему регистру и удаляем пробелы
     word = word.lower().replace(" ", "")
-    # Сравниваем слово с перевернутой версией
     return word == word[::-1]
 
 def proverka_1(func, word):
