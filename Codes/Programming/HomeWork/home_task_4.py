@@ -18,7 +18,7 @@ if variant == 1:
     result = compare_characters(symbol1, symbol2)
     print(result)
 
-if variant == 2:
+'''if variant == 2:
     dict = {
         "key7": 24,
         "key6": 9,
@@ -33,6 +33,6 @@ if variant == 2:
     max_val_key = max(dict, key=dict.get)
     print("Максимальный элемент словаря: ", max_val, "и имеет ключ: ", max_val_key)
     print("Максимальный ключ словаря: ", max(dict))
-
-    '''key=d.get применяет метод get() к каждому элементу словаря 
-    для получения значений и находит ключ с максимальным значением.'''
+    
+    key=d.get применяет метод get() к каждому элементу словаря 
+    для получения значений и находит ключ с максимальным значением.''' 

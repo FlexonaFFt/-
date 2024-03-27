@@ -1,0 +1,15 @@
+class ClassCat:
+
+    def __init__(self, color):
+        self.color = color
+        self.__type_ = "cat"
+
+    def meow(self):
+        for _ in range(3):
+            print("Мяу")
+
+    def print_info(self):
+        print(self.color, self.__type_)
+
+Matroskin = ClassCat('white')
+print(Matroskin._ClassCat__type_)

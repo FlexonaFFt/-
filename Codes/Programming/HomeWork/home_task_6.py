@@ -1,20 +1,3 @@
-class ItsCat():
-    def __init__(self, color):
-        self.color = color
-        self.type_ = "cat"
-    
-    def meow(self):
-        for _ in range(3):
-            print("Мяу")
-
-    def print_info(self):
-        print(self.color, self.type_)
-
-'''
-Matroskin = ItsCat('white')
-Matroskin.meow
-Matroskin.print_info'''
-
 class Pie():
   def __init__(self, topping, testo, size):
     self.topping = topping
