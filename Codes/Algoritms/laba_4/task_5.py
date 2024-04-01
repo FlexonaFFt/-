@@ -3,7 +3,7 @@ def get_mean(north, south, len_north, len_south):
     res_len = length // 2 + 1
     i, j = 0, 0
     res = []
-    for k in range(res_len):
+    for _ in range(res_len):
         if i < len_north and j < len_south:
             if north[i] < south[j]:
                 res.append(north[i])
