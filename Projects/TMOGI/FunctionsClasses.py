@@ -8,7 +8,7 @@ class GeodesyCalculations:
         self.coordinates = []
         self.hord_distances = []
         self.radius = []
-        self.optimal_radius
+        self.betta = 0
 
     def import_coordinates(self):
         num_ = int(input("Введите количество координат: "))
@@ -35,6 +35,7 @@ class GeodesyCalculations:
                 d = math.sqrt((lat_2 - lat_1) ** 2 + (lon_2 - lon_1) ** 2)
                 hord.append(d)
             self.hord_distances.append(hord)
+        # print(self.hord_distances)
 
     def calculate_radius(self):
         for i in range(len(self.hord_distances)):
@@ -44,11 +45,14 @@ class GeodesyCalculations:
                 self.radius.append(radius)
         # print(self.radius)
     
-    def optimal_radius(self):
-        sum_radii = sum(self.radius)
-        self.optimal_radius = sum_radii / len(self.radius)
-        print(f'Значение оптимального радиуса является следующим: {self.optimal_radius}')
+    def calculate_optimal_grades(self):
+        self.betta = math.acos(self.hord_distances[0][0] / self.radius[0])
+        print(self.betta)
 
+    def center_coordinates(self):
+        center_lat = 0
+        center_lon = 0
+        alfa_1 = math.atan()
 
 
     def plot_hord_distance(self):
