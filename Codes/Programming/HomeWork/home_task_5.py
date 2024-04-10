@@ -21,9 +21,6 @@ if zadacha == 1:
     answer = sredniy_rost(class_mates)
     print("Средний рост в группе: {:.2f} см".format(answer))
 
-    # проверка
-    #print((193 + 194 + 188 + 176 + 183 + 175 + 175 + 176 + 175) / 9)
-
 if zadacha == 2:
     class Group:
         def __init__(self, class_mates):
