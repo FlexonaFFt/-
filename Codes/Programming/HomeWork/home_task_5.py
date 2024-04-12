@@ -25,13 +25,14 @@ if zadacha == 2:
     class Group:
         def __init__(self, class_mates):
             self.class_mates = class_mates
+            self._publick_height = 0
+            self._sred = 0
 
         def sredniy_rost(self):
-            publick_height = 0
             for mate in self.class_mates:
-                publick_height += int(mate['height'])
-            sred = publick_height / len(class_mates)
-            return sred
+                self._publick_height += int(mate['height'])
+            self._sred = self._publick_height / len(self.class_mates)
+            return self._sred
 
     group = Group(class_mates)
     answer = group.sredniy_rost()
